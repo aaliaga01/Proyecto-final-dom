@@ -60,11 +60,20 @@ var elementos = [
     "completed": true
   }]
 
+
+
 function imprimir(){
 	var titulo = document.getElementById("lista");//aqui se va imprimir
-	elementos.forEach(function(el){ // forEach +  para que recorra
-      titulo.innerHTML += '<li>' + el.title + '</li>';
+	elementos.forEach(function(valor){ // forEach +  para que recorra
+      titulo.innerHTML += '<li>' + valor.title + '</li>';
 	})	
 }
 imprimir();
+
+function agregar(){
+	var titulo = document.getElementById("lista");//aqui se va imprimir
+	var nuevo= document.getElementById("tareaNueva").value;
+	titulo.innerHTML += '<li>' + nuevo + '</li>';
+}
+agregar();
 
