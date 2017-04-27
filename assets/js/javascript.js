@@ -58,9 +58,11 @@ var elementos = [
     "id": 10,
     "title": "illo est ratione doloremque quia maiores aut",
     "completed": true
-  }];
+  }]
 
-function mostrarLista (){
-
-
-};
+function cosas(){
+	var titulo = document.getElementById("contenido");//aqui se va imprimir
+	elementos.forEach(function(el){ // forEach para que recorra
+      titulo.innerHTML += el.title;
+})	
+}
