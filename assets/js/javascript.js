@@ -60,9 +60,11 @@ var elementos = [
     "completed": true
   }]
 
-function cosas(){
-	var titulo = document.getElementById("contenido");//aqui se va imprimir
-	elementos.forEach(function(el){ // forEach para que recorra
-      titulo.innerHTML += el.title;
-})	
+function imprimir(){
+	var titulo = document.getElementById("lista");//aqui se va imprimir
+	elementos.forEach(function(el){ // forEach +  para que recorra
+      titulo.innerHTML += '<li>' + el.title + '</li>';
+	})	
 }
+imprimir();
+
